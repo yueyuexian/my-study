@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'iconfont'; /* Project id 4872512 */
+    /* Color fonts */
+    src: url('../font/iconfont.woff2?t=1755590613726') format('woff2'),
+        url('../font/iconfont.woff?t=1755590613726') format('woff'),
+        url('../font/iconfont.ttf?t=1755590613726') format('truetype');
+}
+
+.iconfont {
+    font-family: 'iconfont' !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* 如果使用symbol方式，则要加入通用 CSS 代码 .icon部分 */
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+.icon-tubiao-05:before {
+    content: '\e60c';
+}
+
+.icon-reset:before {
+    content: '\e611';
+}
+
+.icon-jiangpai:before {
+    content: '\e606';
+}
+
+.icon-jiahao:before {
+    content: '\eaf3';
+}
+
+.icon-dianzan_kuai:before {
+    content: '\ec8c';
+}
+
+.icon-canyurenshu:before {
+    content: '\e68e';
+}
+
+.icon-chenggong:before {
+    content: '\e656';
+}
+
+.icon-daishenhe:before {
+    content: '\e725';
+}
+
+.icon-my:before {
+    content: '\e76c';
+}
+
+.icon-angle-right-solid:before {
+    content: '\e604';
+}
+
+.icon-angle-down-solid:before {
+    content: '\e605';
+}

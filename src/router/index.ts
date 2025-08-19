@@ -41,6 +41,11 @@ const routes = [
         path: '/float',
         name: 'float',
         component: () => import('@/views/Float/index.vue')
+    },
+    {
+        path: '/iconFont',
+        name: 'iconFont',
+        component: () => import('@/views/IconFont/index.vue')
     }
 ]
 
