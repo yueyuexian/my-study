@@ -1,0 +1,30 @@
+{
+    // 继承 Vue 官方提供的 DOM 环境基础 TypeScript 配置
+    "extends": "@vue/tsconfig/tsconfig.dom.json",
+
+    // 包含以下文件进行类型检查：
+    // - env.d.ts: 环境类型声明文件
+    // - src目录下所有文件
+    // - 所有Vue单文件组件
+    "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
+
+    // 排除src目录下所有测试文件
+    "exclude": ["src/**/__tests__/*"],
+
+    // TypeScript编译器选项
+    "compilerOptions": {
+        // 增量编译信息存储位置
+        "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+
+        // 启用所有严格类型检查选项
+        "strict": true,
+
+        // tsconfig.json 负责 TypeScript 类型检查时的路径解析
+        // 模块路径映射配置
+        "paths": {
+            // 将@/*映射到./src/*路径，用于简化导入路径
+            // 例如：@/components/Button.vue -> src/components/Button.vue
+            "@/*": ["./src/*"]
+        }
+    }
+}
