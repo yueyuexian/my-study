@@ -23,6 +23,8 @@
     <button @click="$router.push({ name: 'flex' })">flex弹性布局</button>
     <br /><br />
     <button @click="$router.push({ name: 'iconFont' })">iconFont图标字体</button>
+    <br /><br />
+    <button @click="$router.push({ name: 'treeTransfer' })">列表数据转换成树形数据</button>
 </template>
 
 <script setup lang="ts">

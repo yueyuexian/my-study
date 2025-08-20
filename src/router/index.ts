@@ -46,6 +46,11 @@ const routes = [
         path: '/iconFont',
         name: 'iconFont',
         component: () => import('@/views/IconFont/index.vue')
+    },
+    {
+        path: '/treeTransfer',
+        name: 'treeTransfer',
+        component: () => import('@/views/Tree/index.vue')
     }
 ]
 
