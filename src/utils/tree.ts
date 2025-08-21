@@ -2,7 +2,7 @@
 interface treeNode {
     id: number
     pid: number
-    [key: string]: any
+    [key: string]: any // 索引签名表示任意属性名类型为string的属性
 }
 
 // 1. 树结构转换：采用递归方式

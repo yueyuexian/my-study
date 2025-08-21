@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-    <div class="float-container">
+    <div class="flex-container">
         <ul>
             <li>1</li>
             <li>2</li>
@@ -23,7 +23,7 @@
 ul {
     list-style: none;
 }
-// .float-container {
+// .flex-container {
 //     width: 80%;
 //     margin: 20px auto;
 //     background-color: #ebf8dc;
@@ -46,7 +46,7 @@ ul {
 //         }
 //     }
 // }
-.float-container {
+.flex-container {
     width: 80%;
     margin: 20px auto;
     background-color: #ebf8dc;

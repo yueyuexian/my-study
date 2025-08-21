@@ -29,6 +29,7 @@
 
 <script setup lang="ts">
 import { shallowRef } from 'vue'
+// shallowRef 浅层响应式ref,只有xx.value变化时才会触发更新
 const state = shallowRef(4)
 const userInfo = shallowRef({
     name: 'lqx',
