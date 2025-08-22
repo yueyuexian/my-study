@@ -1,0 +1,18 @@
+{
+    "login": {
+        "token": "ejshsfel3235jsjajsf1"
+    },
+    "user": [
+        {
+            "id": "1",
+            "code": 0,
+            "message": "success",
+            "data": {
+                "id": "1",
+                "username": "admin",
+                "avatar": "https://ts1.tc.mm.bing.net/th/id/OIP-C.qOVNXup8kQ0DZg7RTVN3ZwHaE8?w=292&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+                "description": "我是管理员"
+            }
+        }
+    ]
+}

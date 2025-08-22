@@ -19,12 +19,13 @@
     <button @click="$router.push({ name: 'float' })" style="margin-right: 20px">
         float浮动布局
     </button>
-
     <button @click="$router.push({ name: 'flex' })">flex弹性布局</button>
     <br /><br />
     <button @click="$router.push({ name: 'iconFont' })">iconFont图标字体</button>
     <br /><br />
     <button @click="$router.push({ name: 'treeTransfer' })">列表数据转换成树形数据</button>
+    <br /><br />
+    <button @click="$router.push({ name: 'ts封装axios' })">ts封装axios</button>
 </template>
 
 <script setup lang="ts">

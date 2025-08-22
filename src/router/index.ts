@@ -51,6 +51,11 @@ const routes = [
         path: '/treeTransfer',
         name: 'treeTransfer',
         component: () => import('@/views/Tree/index.vue')
+    },
+    {
+        path: '/axios-ts',
+        name: 'ts封装axios',
+        component: () => import('@/views/AxiosTs/index.vue')
     }
 ]
 
