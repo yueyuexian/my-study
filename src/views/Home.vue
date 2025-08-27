@@ -26,6 +26,8 @@
     <button @click="$router.push({ name: 'treeTransfer' })">列表数据转换成树形数据</button>
     <br /><br />
     <button @click="$router.push({ name: 'ts封装axios' })">ts封装axios</button>
+    <br /><br />
+    <button @click="$router.push({ name: '自动导入' })">unplugin-auto-import自动导入api</button>
 </template>
 
 <script setup lang="ts">

@@ -61,6 +61,11 @@ const routes = [
         path: '/zhuangshiqi',
         name: '装饰器',
         component: () => import('@/views/Zhuangshiqi/index.vue')
+    },
+    {
+        path: '/autoImport',
+        name: '自动导入',
+        component: () => import('@/views/AutoImport/index.vue')
     }
 ]
 
