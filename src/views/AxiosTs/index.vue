@@ -1,12 +1,19 @@
 <script lang="ts" setup>
 import { getUserInfoService } from '@/api/user'
-import { onMounted, ref, useId } from 'vue'
+import { onMounted, ref } from 'vue'
 import type { UserInfoRes } from '@/api/user/types'
+import { getUserInfoService2, getUserInfoApi } from '@/api/user/index2'
+
 const userInfo = ref<UserInfoRes>()
 const getUserInfo = async () => {
     try {
         const res = await getUserInfoService()
+        const res2 = await getUserInfoService2()
+        const res3 = await getUserInfoApi()
         console.log(res)
+        console.log(res2)
+        console.log(res3)
+
         userInfo.value = res
     } catch (error) {}
 }

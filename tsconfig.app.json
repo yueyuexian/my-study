@@ -25,6 +25,7 @@
             // 将@/*映射到./src/*路径，用于简化导入路径
             // 例如：@/components/Button.vue -> src/components/Button.vue
             "@/*": ["./src/*"]
-        }
+        },
+        "experimentalDecorators": true
     }
 }

@@ -56,6 +56,11 @@ const routes = [
         path: '/axios-ts',
         name: 'ts封装axios',
         component: () => import('@/views/AxiosTs/index.vue')
+    },
+    {
+        path: '/zhuangshiqi',
+        name: '装饰器',
+        component: () => import('@/views/Zhuangshiqi/index.vue')
     }
 ]
 

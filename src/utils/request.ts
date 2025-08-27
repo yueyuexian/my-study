@@ -1,3 +1,7 @@
+/**
+ * ts 封装 axios, http是个对象，具有get、post、put、delete属性
+ * 且返回结果是Pomise<T>,即后端返回的restful数据格式中的data
+ */
 import axios from 'axios'
 
 import type {
@@ -21,7 +25,7 @@ const request = axios.create({
 
 /* 请求拦截器 */
 request.interceptors.request.use(
-    (config: AxiosRequestConfig) => {
+    (config: InternalAxiosRequestConfig) => {
         // ... 对请求做一些处理
         //  伪代码
         // if (token) {
@@ -83,7 +87,10 @@ request.interceptors.response.use(
 /* 导出封装的请求方法 */
 // 封装这一层公共请求方法，主要目的就是为了帮编译器正确识别类型。方法就是手动设置返回类型。
 const http = {
-    // 如果我们不封装指定返回值类型，那么默认返回值类型就是 Promise<AxiosResponse<any, any>>
+    // 如果我们不封装指定返回值类型，那么默认返回值类型就是 Promise<AxiosResponse<any, any>>,
+    // 但实际上我们在响应拦截器中已经处理过，返回的应该是 Promise<T>，但编译器并不知道，
+    // 所以我们需要手动指定返回值类型。
+
     // get(url: string, config: AxiosRequestConfig) {
     //     return request.get(url, config)
     // }
@@ -104,4 +111,5 @@ const http = {
         return request.delete(url, config)
     }
 }
+// 导出封装的请求方法
 export default http
