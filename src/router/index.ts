@@ -66,6 +66,11 @@ const routes = [
         path: '/autoImport',
         name: '自动导入',
         component: () => import('@/views/AutoImport/index.vue')
+    },
+    {
+        path: '/set-map',
+        name: 'Set集合和Map映射',
+        component: () => import('@/views/Set-Map/index.vue')
     }
 ]
 

@@ -28,6 +28,8 @@
     <button @click="$router.push({ name: 'ts封装axios' })">ts封装axios</button>
     <br /><br />
     <button @click="$router.push({ name: '自动导入' })">unplugin-auto-import自动导入api</button>
+    <br /><br />
+    <button @click="$router.push({ name: 'Set集合和Map映射' })">Set集合和Map映射</button>
 </template>
 
 <script setup lang="ts">
