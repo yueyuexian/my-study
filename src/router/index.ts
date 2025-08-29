@@ -71,6 +71,11 @@ const routes = [
         path: '/set-map',
         name: 'Set集合和Map映射',
         component: () => import('@/views/Set-Map/index.vue')
+    },
+    {
+        path: '/promise-myAll',
+        name: '手写Promise.myAll方法',
+        component: () => import('@/views/Promise-myAll/index.vue')
     }
 ]
 

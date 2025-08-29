@@ -30,6 +30,7 @@
     <button @click="$router.push({ name: '自动导入' })">unplugin-auto-import自动导入api</button>
     <br /><br />
     <button @click="$router.push({ name: 'Set集合和Map映射' })">Set集合和Map映射</button>
+    <button @click="$router.push({ name: '手写Promise.myAll方法' })">手写Promise.myAll方法</button>
 </template>
 
 <script setup lang="ts">
@@ -48,6 +49,7 @@ const changeName = (name: string): void => {
 
 <style scoped>
 button {
+    margin: 0 10px;
     border: 3px solid transparent;
     height: 30px;
 }
